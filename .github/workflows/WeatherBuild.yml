@@ -19,6 +19,9 @@ jobs:
         java-version: '17'
         distribution: 'adopt'
 
+    - name: Init gradle wrapper
+      run: gradle wrapper
+
     - name: Change wrapper permissions
       run: chmod +x ./gradlew
 
